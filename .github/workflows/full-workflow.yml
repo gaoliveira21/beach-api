@@ -40,6 +40,6 @@ jobs:
       
       - name: Deployment
         if: github.ref == 'refs/heads/main'
-        run: git remote add umbler ssh://git@geonosis.deploy.umbler.com:9922/klq06z6j/beaches-forecast-com.git && git push umbler main
+        run: git remote add umbler ssh://git@geonosis.deploy.umbler.com:9922/klq06z6j/beaches-forecast-com.git && git checkout -b master && git push umbler master
         env:
           CI: true
