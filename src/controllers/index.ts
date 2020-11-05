@@ -1,3 +1,4 @@
+import logger from '@src/logger';
 import { CUSTOM_VALIDATION } from '@src/models/user';
 import { Response } from 'express';
 import mongoose from 'mongoose';
@@ -11,6 +12,7 @@ export abstract class BaseController {
       const clientErrors = this.handleClientErrors(error);
       res.status(clientErrors.code).send(clientErrors);
     } else {
+      logger.error(error);
       res.status(500).send({ code: 500, error: 'Something went wrong!' });
     }
   }
@@ -21,7 +23,6 @@ export abstract class BaseController {
     const duplicatedKindErrors = Object.values(error.errors).filter(
       (err) => err.kind === CUSTOM_VALIDATION.DUPLICATED
     );
-
     if (duplicatedKindErrors.length) {
       return { code: 409, error: error.message };
     }
