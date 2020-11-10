@@ -28,7 +28,9 @@ export class Forecast {
     beaches: Beach[]
   ): Promise<TimeForecast[]> {
     try {
-      const timeForecast = this.mapForecastByTime(await this.calculateRating(beaches));
+      const timeForecast = this.mapForecastByTime(
+        await this.calculateRating(beaches)
+      );
       return timeForecast.map((t) => ({
         time: t.time,
         forecast: _.orderBy(t.forecast, ['rating'], ['desc']),

@@ -17,7 +17,7 @@ process.on('unhandledRejection', (reason, promise) => {
 
 process.on('uncaughtException', (error) => {
   logger.error(`App exiting due to an uncaught exception: ${error}`);
-  process.exit(ExitStatus.Failure)
+  process.exit(ExitStatus.Failure);
 });
 
 (async (): Promise<void> => {
