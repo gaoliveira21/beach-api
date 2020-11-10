@@ -7,7 +7,11 @@ Link do curso: [DO ZERO A PRODUÇÃO: APRENDA A CONSTRUIR UMA API NODE.JS COM TY
 
 ## 📖 Sobre o projeto
 
-Durante o curso é criado uma API para calcular a melhor condição de surf entre varias praias, essa API tem como objetivo servir a aplicação web.
+Durante o curso é criado uma API para calcular a melhor condição de surf entre varias praias, essa API tem como objetivo servir a aplicação web (a aplicação web não é construida durante o curso pois ela não é o foco do conteúdo, ela é disponibilizada pronta).
+
+Resultado final do curso
+
+<img src="./.github/resultado-final.png">
 
 ---
 
