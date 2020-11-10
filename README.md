@@ -1,9 +1,9 @@
 <p align="center">
   <img width="200" src="./.github/logo.png">
-  <p>Node.js API com Typescript</p>
+  <p align="center">Node.js API com Typescript</p>
 </p>
 
-Link do curso:[https://www.youtube.com/playlist?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh](https://www.youtube.com/playlist?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh)
+Link do curso: [DO ZERO A PRODUÇÃO: APRENDA A CONSTRUIR UMA API NODE.JS COM TYPESCRIPT](https://www.youtube.com/playlist?list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh)
 
 ## 📖 Sobre o projeto
 
